@@ -31,6 +31,8 @@ class DataLoader():
         # Drop id as it is not relevant
         self.data.drop(["id"], axis=1, inplace=True)
 
+        self.data = self.data.astype(int)
+
         # Standardization 
         # Usually we would standardize here and convert it back later
         # But for simplification we will not standardize / normalize the features
