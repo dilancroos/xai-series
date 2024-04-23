@@ -25,12 +25,12 @@ print(f"Accuracy {accuracy_score(y_test, y_pred)}")
 
 # %% Apply lime
 # Initilize Lime for Tabular data
-lime = LimeTabular(predict_fn=rf.predict_proba, 
-                   data=X_train, 
+lime = LimeTabular(rf.predict_proba,
+                   data=X_train,
                    random_state=1)
 # Get local explanations
-lime_local = lime.explain_local(X_test[-20:], 
-                                y_test[-20:], 
+lime_local = lime.explain_local(X_test[-100:],
+                                y_test[-100:],
                                 name='LIME')
 
 show(lime_local)
