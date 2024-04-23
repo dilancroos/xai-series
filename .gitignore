@@ -1,0 +1,119 @@
+.xai/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pyzw
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+.ipynb_checkpoints/*
+*.nbconvert.ipynb
+*.nbconvert.html
+*.nbconvert.pdf
+*.nbconvert.md
+*.nbconvert.tex
+*.nbconvert.txt
+*.nbconvert.py
+*.nbconvert.sh
+*.nbconvert.log
+*.nbconvert.json
+*.nbconvert.yaml
+*.nbconvert.yml
+*.nbconvert.tpl
+*.nbconvert.tplx
+*.nbconvert.tpx
+*.nbconvert.tpxx
+
+# Jupyter Lab
+.jupyterlab/
+.jupyterlab/*
+
+# Spyder
+.spyderproject
+.spyproject
+.spyproject/*
+
+# PyCharm
+.idea/
+.idea/*
+
+
+# Visual Studio Code
+.vscode/
+.vscode/*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+.atom/*
+
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
+
+# Windows
+$RECYCLE.BIN/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.swm
+*.swl
+
+# git
+
+.git/
+.git/*
+!.gitignore
+!.gitattributes
+!.gitmodules
+!.gitkeep
+
+# Docker
+.dockerignore
+.dockerignore/*
+Dockerfile
+Dockerfile.*
+docker-compose.yml
+docker-compose.yaml
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.prod.yml
+docker-compose.prod.yaml
+docker-compose.dev.yml
+docker-compose.dev.yaml
+docker-compose.test.yml
+docker-compose.test.yaml
+docker-compose.ci.yml
+docker-compose.ci.yaml
+docker-compose.staging.yml
+docker-compose.staging.yaml
+docker-compose.production.yml
+docker-compose.production.yaml
+docker-compose.development.yml
+docker-compose.development.yaml
+docker-compose.testing.yml
+
+
+
