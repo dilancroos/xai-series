@@ -23,7 +23,7 @@ print("After oversampling:", X_train.shape)
 # %% Fit logistic regression model
 lr = LogisticRegression(random_state=2021, feature_names=X_train.columns, penalty='l1', solver='liblinear')
 lr.fit(X_train, y_train)
-print("Training finished.")
+print("logistic regression model: Training finished.")
 
 # %% Evaluate logistic regression model
 y_pred = lr.predict(X_test)
@@ -41,7 +41,7 @@ show(lr_global)
 # %% Fit decision tree model
 tree = ClassificationTree()
 tree.fit(X_train, y_train)
-print("Training finished.")
+print("decision tree model: Training finished.")
 y_pred = tree.predict(X_test)
 print(f"F1 Score {f1_score(y_test, y_pred, average='macro')}")
 print(f"Accuracy {accuracy_score(y_test, y_pred)}")
@@ -53,7 +53,7 @@ show(tree_local)
 # %% Fit Explainable Boosting Machine
 ebm = ExplainableBoostingClassifier(random_state=2021)
 ebm.fit(X_train, y_train) 
-print("Training finished.")
+print("Explainable Boosting Machine: Training finished.")
 y_pred = ebm.predict(X_test)
 print(f"F1 Score {f1_score(y_test, y_pred, average='macro')}")
 print(f"Accuracy {accuracy_score(y_test, y_pred)}")
