@@ -23,5 +23,20 @@ for col in columns:
 
 # %% Show preprocessed dataframe
 data_loader.preprocess_data()
+
+# %% Show head
 data_loader.data.head()
 
+# %% Show info
+data_loader.data.info()
+
+# %% Change False to 0 and True to 1 in all columns
+# data_loader.data = data_loader.data.astype(int)
+
+# %% Show head
+# data_loader.data.head()
+
+# %% Show info
+# data_loader.data.info()
+
+# %%
