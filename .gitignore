@@ -115,5 +115,7 @@ docker-compose.development.yml
 docker-compose.development.yaml
 docker-compose.testing.yml
 
-
+# data/brain_mri dataset
+data/brain_mri/Testing/*
+data/brain_mri/Training/*
 
