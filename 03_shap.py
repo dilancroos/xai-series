@@ -25,8 +25,8 @@ print(f"Accuracy {accuracy_score(y_test, y_pred)}")
 # %% Create SHAP explainer
 explainer = shap.TreeExplainer(rf)
 # Calculate shapley values for test data
-start_index = 1
-end_index = 2
+start_index = 5
+end_index = 9
 shap_values = explainer.shap_values(X_test[start_index:end_index])
 X_test[start_index:end_index]
 
@@ -42,10 +42,11 @@ shap.initjs()
 prediction = rf.predict(X_test[start_index:end_index])[0]
 print(f"The RF predicted: {prediction}")
 shap.force_plot(explainer.expected_value[1],
-                shap_values[1],
-                X_test[start_index:end_index]) # for values
+                shap_values[...,1],
+                X_test[start_index:end_index])  # for values
 
 # %% >> Visualize global features
 # Feature summary
-shap.summary_plot(shap_values, X_test)
+shap.summary_plot(shap_values[...,1], X_test[start_index:end_index])
 
+# %%
